@@ -79,7 +79,8 @@ export default class ReactStripeCheckout extends React.Component {
     //     token is the token object created.
     //     token.id can be used to create a charge or customer.
     //     token.email contains the email address entered by the user.
-    token: PropTypes.func.isRequired,
+    token: PropTypes.func,
+    source: PropTypes.func,
 
     // ==========================
     // Highly Recommended Options
@@ -301,6 +302,7 @@ export default class ReactStripeCheckout extends React.Component {
 
   getConfig = () => [
     'token',
+    'source',
     'image',
     'name',
     'description',
