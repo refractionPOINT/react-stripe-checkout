@@ -10,7 +10,7 @@
     "watch": "mkdir -p  dist; ./node_modules/.bin/babel StripeCheckout.js --out-file ./dist/main.js --source-maps inline --watch",
     "build": "mkdir -p dist; ./node_modules/.bin/babel StripeCheckout.js --out-file ./dist/main.js",
     "version": "npm run build",
-    "prepare": "npm run build"
+    "prepare": "npm install ."
   },
   "babel": {
     "presets": [
